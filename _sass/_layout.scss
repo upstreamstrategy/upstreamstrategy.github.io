@@ -1,3 +1,12 @@
+.home{
+    padding-top: 100px;
+
+    @include media($medium-screen-up){
+        padding-top: 0;
+    }
+
+}
+
 nav {
     background-color: rgba(255,255,255,0.92);
     display: block;
@@ -117,6 +126,21 @@ nav {
     border: 3px solid white;
     font-size: 1.5em;
   }
+
+  &:hover,
+      &:focus {
+        background-color: shade($action-color, 20%);
+    }
+
+  a {
+    color: white;
+      &:hover,
+      &:focus {
+        background-color: shade($action-color, 20%);
+        color: #fff;
+    }
+  }
+
 }
 
    h1 {
@@ -215,7 +239,7 @@ nav {
 }
 
 .services {
-     background: url(/assets/services.jpeg) no-repeat center center fixed; 
+   background: url(/assets/services.jpeg) no-repeat center center scroll;   
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -225,6 +249,14 @@ nav {
    text-align: center;
    z-index: 0;
    overflow: hidden;
+
+   @include media($medium-screen-up){
+    background: url(/assets/services.jpeg) no-repeat center center fixed; 
+       -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   }
 
    h2{
     color: white;
