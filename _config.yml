@@ -1,0 +1,9 @@
+# Site settings
+title: Upstream Strategy Group
+description: Upstream Strategy Group help frames conversations. Be it in the media, social, a local community or amongst a stakeholder group. We think ahead to build towards the outcome our clients need.  We help you around obstacles and roadblocks, getting you upstream. 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://upstreamstrategy.ca" # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
