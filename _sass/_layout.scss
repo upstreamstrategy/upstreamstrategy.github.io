@@ -81,7 +81,11 @@ nav {
     margin: 0 auto;
     display: block;
     background-color: white;
-    width: 20%;
+    width: 30%;
+
+    @include media($medium-screen-up){
+       width: 20%; 
+    }
 
 }
 
