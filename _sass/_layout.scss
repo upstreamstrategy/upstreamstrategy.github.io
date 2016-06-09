@@ -455,7 +455,7 @@ nav {
    }
 
 @include media($large-screen-up){
-   background: url(/assets/supriya.jpg) no-repeat top left fixed;   
+   background: url(/assets/supriya-crop.jpg) no-repeat top left fixed;   
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -464,7 +464,7 @@ nav {
 
   .mobile-photo-supriya{
     height:300px;
-   background: url(/assets/supriya.jpg) no-repeat top center scroll;
+   background: url(/assets/supriya-crop.jpg) no-repeat top center scroll;
     -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -558,7 +558,6 @@ nav {
 
     @include media($large-screen-up){
         padding-top: 0;
-        float: right;
         width: 40%;
         padding: 10% 5%;
         background: rgba(106, 106, 106, 0.38);
