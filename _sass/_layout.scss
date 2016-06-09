@@ -188,13 +188,13 @@ nav {
     float: none;
     display: block;
     width: 100%;
-    padding: 15%;
+    padding: 7%;
     background-color: $green;  
   
     @include media($large-screen-up){ 
     float: left;
     width: 30%;
-    height: 400px;
+    height: 200px;
     padding: 0;
     overflow: hidden;
   }
@@ -207,14 +207,14 @@ nav {
       color: white;
       font-size: 1.5em;
       text-align: center;
-      text-transform: uppercase;
       vertical-align: middle;
       padding-top: 0;
+      font-style: italic;
 
       @include media($large-screen-up){ 
-        padding-top: 30%;
-        width: 60%;
-        font-size: 2em;
+        padding-top: 16%;
+        width: 80%;
+        font-size: 1.7em;
         }
       }
     }
@@ -223,13 +223,14 @@ nav {
     float: none;
     display: block;
     width: 100%;
-    padding: 10%;
+    padding: 0%;
     background-color: $blue;
-    font-size: 1em;
+    font-size: 1.2em;
     
     @include media($large-screen-up){
+      padding: 10%;
       overflow:hidden;
-      height: 400px;
+      height: 200px;
       float: right;
     width: 70%;
     padding: 0;
@@ -237,7 +238,7 @@ nav {
   }
 
     p{
-      padding: 10%;
+      padding: 6% 10%;
       color: white;
       line-height: 1.6;
 
@@ -324,19 +325,6 @@ nav {
 }
 }
 
-.who-we-are{
-    padding: 7%;
-    overflow: hidden;
-
-    h2{
-        color: $green;
-        text-align: center;
-        font-size: 2.5em;
-        padding-bottom: 5%;
-        text-transform: uppercase;
-    }
-}
-
 
 
 .get-in-touch{
@@ -375,3 +363,222 @@ nav {
          }
 
     }
+
+    .profile.center{
+      background: #49CEBE;
+    }
+
+.bio-alex{
+   width: 100%;
+   position: relative;
+   z-index: 0;
+   background: $blue; 
+   overflow: hidden;  
+
+   .picture-gradient{
+    display: none;
+
+    @include media($large-screen-up){
+    display: block;
+    }
+   }
+
+@include media($large-screen-up){
+   background: url(/assets/alex.jpg) no-repeat top center fixed;   
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+
+  .mobile-photo-alex{
+    height:300px;
+   background: url(/assets/alex.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   @include media($large-screen-up){
+   display: none;
+   } 
+  }
+
+  .bio-text{
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 10% 5%;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+
+    @include media($large-screen-up){
+        padding-top: 0;
+        width: 40%;
+        padding: 10% 5%;
+                background: rgba(106, 106, 106, 0.38);
+
+    }
+   
+
+     h2{
+      font-size: 1.7rem;
+    }
+    p{
+      font-size: 1.2rem;
+
+    }
+    a{
+      color: white;
+    }
+
+  
+   }
+
+}
+
+.bio-supriya{
+   width: 100%;
+   position: relative;
+   z-index: 0;
+   background: $blue; 
+   overflow: hidden;  
+   float: none;
+
+   .picture-gradient{
+    display: none;
+
+    @include media($large-screen-up){
+    display: block;
+    
+    }
+   }
+
+@include media($large-screen-up){
+   background: url(/assets/supriya.jpg) no-repeat top left fixed;   
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+
+  .mobile-photo-supriya{
+    height:300px;
+   background: url(/assets/supriya.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   @include media($large-screen-up){
+   display: none;
+   } 
+  }
+
+  .bio-text{
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 10% 5%;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    float: none;
+
+    @include media($large-screen-up){
+        padding-top: 0;
+        width: 40%;
+        padding: 10% 5%;
+        background: rgba(106, 106, 106, 0.38);
+        float: right;
+  
+
+    }
+   
+
+     h2{
+      font-size: 1.7rem;
+    }
+    p{
+      font-size: 1.2rem;
+
+    }
+    a{
+      color: white;
+    }
+
+  
+   }
+
+}
+
+.bio-michael{
+   width: 100%;
+   position: relative;
+   z-index: 0;
+   background: $blue; 
+   overflow: hidden;  
+
+   .picture-gradient{
+    display: none;
+
+    @include media($large-screen-up){
+    display: block;
+    }
+   }
+
+@include media($large-screen-up){
+   background: url(/assets/michael.jpg) no-repeat top center fixed;   
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+
+  .mobile-photo-michael{
+    height:300px;
+   background: url(/assets/michael.jpg) no-repeat top center scroll;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   @include media($large-screen-up){
+   display: none;
+   } 
+  }
+
+  .bio-text{
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 10% 5%;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    float: none;
+
+    @include media($large-screen-up){
+        padding-top: 0;
+        float: right;
+        width: 40%;
+        padding: 10% 5%;
+        background: rgba(106, 106, 106, 0.38);
+
+
+    }
+   
+
+     h2{
+      font-size: 1.7rem;
+    }
+    p{
+      font-size: 1.2rem;
+
+    }
+    a{
+      color: white;
+    }
+
+  
+   }
+
+}
