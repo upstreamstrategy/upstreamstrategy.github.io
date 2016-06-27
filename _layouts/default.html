@@ -5,15 +5,20 @@
 
   <body>
 
-    {% include header.html %}
+    {% unless page.title == "Don't stop Growth!" %}
+      {% include header.html %}
+    {%endunless%}
 
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
+    {% unless page.title == "Don't stop Growth!" %}
 
     {% include footer.html %}
+        {%endunless%}
+
 
   </body>
 
