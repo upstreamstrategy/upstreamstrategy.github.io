@@ -83,3 +83,30 @@ iframe .btn.btn-submit{
   font-family: $heading-2;
   text-transform: uppercase;
 }
+
+.tab{
+  overflow: hidden;
+
+  h3 a{
+    font-family: $heading-2;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: white;
+
+    &:hover, &:focus{
+      color: #eaeaea;
+    }
+  }
+}
+
+.growth-button{
+  background-color: gray;
+  font-family: $heading-2;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+
+  &:hover, &:focus{
+    background-color: #acacac;
+  }
+}

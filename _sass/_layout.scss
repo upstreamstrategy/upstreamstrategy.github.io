@@ -581,3 +581,73 @@ nav {
    }
 
 }
+
+.mobile-explainer{
+  display: block;
+  padding: 5% 0%;
+  
+  h3{
+    font-size: 1.5em;
+  }
+  h3, p{
+    color: gray;
+    font-family: $heading-2;
+  }
+
+  .inline-link{
+    color: #de7575;
+
+    &:hover, &:focus{
+      text-decoration: underline;
+    }
+  }
+@include media($large-screen-up){
+  display: none;
+}
+}
+
+.desktop-explainer{
+  display: none;
+@include media($large-screen-up){
+  display: block;
+}
+}
+
+
+.growth{
+  background: url(/assets/traffic-light.jpg) no-repeat bottom center scroll; 
+  height: 250px;
+    background-size: cover;
+    padding: 0;
+
+
+  @include media($large-screen-up){
+    background: url(/assets/traffic-light.jpg) no-repeat bottom center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   width: 100%;
+   position: relative;
+   text-align: center;
+   z-index: 0;
+   padding: 5% 0% 5% 0;
+   overflow: hidden;
+   height: auto;
+  }
+
+   h1{
+    color: white;
+    font-size: 4em;
+    text-align: left;
+   }
+}
+
+.tab{
+  display: none;
+  
+   @include media($large-screen-up){
+    display: block;
+  }
+
+}

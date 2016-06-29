@@ -1,7 +1,7 @@
 ---
   layout: default
   title: "Don't stop Growth!"
-  excerpt: "After living in Tel Aviv for a month, I have a few things to add to my first impression of the city - including suggestions on new places to eat and drink"
+  excerpt: "Winnipeg is moving in the right direction. Now is not the time to add an extra cost to homeownership, curbing out cities growth and potential."
   permalink: '/growth'
 ---
 
@@ -12,11 +12,12 @@
 <div class="half right">
         <h1>Don’t Stop Growth! </h1>
         <p class="cta"><strong> Winnipeg is moving in the right direction. </strong><br/> Now is not the time to add an extra cost to homeownership, curbing out cities growth and potential.</p>
+        <a href="#form"><button>Take action</button></a>
     </div>
   </div>
   </div>
 
-<div class="form-container">
+<div class="form-container" id="form">
 <div class="width-container">
 <h2 class="basic-title white"> BE HEARD: </h2>
 <p class="form-cta">Use our tool to email your municipal representative directly and tell them why you want to stop the tax on growth.</p>
