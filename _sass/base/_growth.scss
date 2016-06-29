@@ -52,7 +52,7 @@
 
 .form-container{
   padding: 5% 0%;
-  background:gray;
+  background: #a3a3a3;
 }
 
 .basic-title{
@@ -71,10 +71,9 @@
 }
 
 .gray{
-  color: gray;
-}
+  color: gray;}
 
-.logo-space{
+.padded-panel{
   padding: 5% 0%; 
 }
 
@@ -100,13 +99,43 @@ iframe .btn.btn-submit{
 }
 
 .growth-button{
-  background-color: gray;
+background-color: #21d762;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+  &:hover, &:focus{
+    background-color: shade(#21d762, 15%);
+  }
+}
+
+.news{
+  border: 2px solid white;
+  padding: 2% 1%;
+  background-color: transparent;
   font-family: $heading-2;
   text-transform: uppercase;
-  text-align: left;
-  display: block;
+  right: 2px;
 
   &:hover, &:focus{
-    background-color: #acacac;
+    background-color:rgba(155, 155, 155, 0.19);
+  }
+}
+
+#news{
+  h3{
+    font-family: $heading-2;
+    font-size: 1.5em;
+  } 
+
+  p, a{
+    font-family: $heading-font-family;
+    color: gray;
+
+    &:hover, &:focus{
+      color: #645c5c;
+    }
   }
 }

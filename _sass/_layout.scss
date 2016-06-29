@@ -594,13 +594,6 @@ nav {
     font-family: $heading-2;
   }
 
-  .inline-link{
-    color: #de7575;
-
-    &:hover, &:focus{
-      text-decoration: underline;
-    }
-  }
 @include media($large-screen-up){
   display: none;
 }
@@ -613,6 +606,18 @@ nav {
 }
 }
 
+
+
+.inline-link{
+    color: #de7575;
+    font-family: $heading-2;
+
+    &:hover, &:focus{
+      text-decoration: underline;
+      color: #de7575;
+      cursor: pointer;
+    }
+  }
 
 .growth{
   background: url(/assets/traffic-light.jpg) no-repeat bottom center scroll; 

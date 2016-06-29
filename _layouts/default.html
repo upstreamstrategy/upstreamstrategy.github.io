@@ -5,7 +5,7 @@
 
   <body>
 
-    {% unless page.title == "Don't stop Growth!" %}
+    {% unless page.title == "Don't stop Growth!" or page.title == "News - Don't stop Growth!" %}
       {% include header.html %}
     {%endunless%}
 
@@ -14,7 +14,7 @@
         {{ content }}
       </div>
     </div>
-    {% unless page.title == "Don't stop Growth!" %}
+    {% unless page.title == "Don't stop Growth!" or page.title == "News - Don't stop Growth!" %}
 
     {% include footer.html %}
         {%endunless%}
