@@ -3,12 +3,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Titillium+Web:400,300,700' rel='stylesheet' type='text/css'>
-
+  <meta property="og:image"content="{{ site.url }}{{ page.image }}"/>
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:image" content="http://upstreamgroup.ca/assets/upstream-logo-rectangle.png"/>
-  <meta property="og:title" content="Upstream Strategy Group"/>
-  <meta property="og:url" content="http://upstreamgroup.ca"/>
+  <meta property="og:title" content="{% if page.title %} {{ page.title }}{% else %} Upstream Strategy Group {% endif %}"/>
+  <meta property="og:url" content="{% if page.urll %} {{ page.urll }}{% else %} http://upstreamgroup.ca {% endif %}"/>
+
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="/font-awesome-4.5.0/css/font-awesome.min.css">

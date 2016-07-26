@@ -411,12 +411,15 @@ nav {
     overflow: hidden;
     width: 100%;
     text-align: left;
+    float: none;
 
     @include media($large-screen-up){
         padding-top: 0;
         width: 40%;
         padding: 10% 5%;
-                background: rgba(106, 106, 106, 0.38);
+        background: rgba(106, 106, 106, 0.38);
+        float: right;
+  
 
     }
    
